@@ -6,6 +6,8 @@ header {
   justify-content: space-between;
 
   padding: 37px 48px;
+
+  position: relative;
 }
 
 .logo {
@@ -20,13 +22,25 @@ div img {
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  position:absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  background-color: #000000;
 }
 
 nav {
   display: none;
 }
 
-a {
+.list-links li {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 36px;
+}
+
+.list-links a {
   text-decoration: none;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -35,11 +49,11 @@ a {
   line-height: 100%;
 }
 
-a:hover {
+.list-links a:hover {
   text-decoration: underline;
 }
 
-a:active {
+.list-links a:active {
   color: var(--primary-color);
   text-decoration: none;
 }
