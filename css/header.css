@@ -18,6 +18,10 @@ div img {
   margin-top: 26px;
 }
 
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+}
+
 nav {
   display: none;
 }
