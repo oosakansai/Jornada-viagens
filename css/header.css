@@ -47,6 +47,7 @@ nav {
   font-weight: 500;
   font-style: "Medium";
   line-height: 100%;
+  font-size: 20px;
 }
 
 .list-links a:hover {
@@ -56,4 +57,26 @@ nav {
 .list-links a:active {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+@media screen and (min-width: 766px) {
+  .navigation-menu {
+    margin-top: 0;
+
+    width: 467px;
+    height: 29px;
+  }
+  .navigation-menu label{
+    display: none;
+  }
+  .navigation-menu nav{
+    display: block;
+  }
+  .navigation-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
 }
